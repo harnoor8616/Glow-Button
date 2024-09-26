@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.searchbar {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+form {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+}
+
+#search {
+    height: 6vh;
+    width: 17vw;
+    border: 1px solid rgba(255, 255, 255, 0.472);
+    border-radius: 3px;
+    background: transparent;
+    text-align: start;
+}
+
+@keyframes Glow {
+    0% {
+        box-shadow: 0px 0px 2px 2px greenyellow;
+    }
+
+    50% {
+        box-shadow: 0px 0px 11px 4px greenyellow;
+    }
+
+    100% {
+        box-shadow: 0px 0px 2px 2px greenyellow;
+    }
+
+}
+
+#search:hover {
+    animation-name: Glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+button {
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.472);
+    height: 6vh;
+    color: rgba(240, 255, 255, 0.496);
+}
+
+button:hover {
+
+    animation-name: Glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+::placeholder {
+    padding-left: 3%;
+}
+
+
+
+#search:focus {
+
+    width: 17vw;
+    border: 1px solid rgb(0, 255, 26);
+    animation-name: Glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 3px;
+    background: transparent;
+    color: rgba(240, 255, 255, 0.496);
+    height: 6vh;
+}
